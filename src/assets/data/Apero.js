@@ -1,6 +1,7 @@
 export const Apero = {
     "number": 1,
     "name": "Aperitif",
+    "image": "../assets/images/zoom.png",
     "description": "First step of this mooc, learn some basic skills and cook amazing dips and crackers",
     "recipes": [
         {

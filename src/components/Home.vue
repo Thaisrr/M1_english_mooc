@@ -1,35 +1,48 @@
 <template>
   <div>
-    <Header></Header>
-    <main>
-      <section id="list-path">
-
-        <h2 class="section-title"></h2>
-
+    <Header class="header"></Header>
+    <main class="main">
+      <section class="flex-container">
         <!-- Liste de cartes en flex -->
-        <div class="flex-container">
           <Card v-for="week of mooc" :key="week.number" :week="week"/>
-        </div>
-
       </section>
-      <article id="about-us">
-        <h2 class="section-title">About Us</h2>
-        <div class="article-container">
-          <img class="small-img float-r" src="assets/images/team.jpg" alt="Notre photo">
-
-          <h3>Who are we ?</h3>
-          <p>Cake sugar plum fruitcake candy canes chocolate jelly beans candy biscuit lollipop. Icing jelly gummi bears pudding. Candy apple pie sweet roll. Muffin caramels I love.</p>
-          <p>Icing chocolate cake chocolate topping jelly-o caramels wafer caramels brownie.
-            Brownie tootsie roll I love jujubes I love I love sesame snaps. Bear claw cupcake tootsie roll tiramisu I love chocolate bar.
-            Cheesecake caramels ice cream liquorice sweet cotton candy dessert brownie.</p>
-
-          <h3>What will you learn ?</h3>
-          <p>Cake sugar plum fruitcake candy canes chocolate jelly beans candy biscuit lollipop. Icing jelly gummi bears pudding. Candy apple pie sweet roll. Muffin caramels I love.</p>
-          <p>Icing chocolate cake chocolate topping jelly-o caramels wafer caramels brownie.
-            Brownie tootsie roll I love jujubes I love I love sesame snaps. Bear claw cupcake tootsie roll tiramisu I love chocolate bar.
-            Cheesecake caramels ice cream liquorice sweet cotton candy dessert brownie.</p>
+      <section class="mooc">
+        <div class="media-container centered-flex">
+          <iframe class="video" src="https://www.youtube.com/embed/RSx1xWn0RJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-      </article>
+        <div class="text centered-flex">
+          <article>
+            <h2>What will you learn ?</h2>
+            <p>Cake sugar plum fruitcake candy canes chocolate jelly beans candy biscuit lollipop. Icing jelly gummi bears pudding. Candy apple pie sweet roll. Muffin caramels I love.</p>
+            <p>Icing chocolate cake chocolate topping jelly-o caramels wafer caramels brownie.
+              Brownie tootsie roll I love jujubes I love I love sesame snaps. Bear claw cupcake tootsie roll tiramisu I love chocolate bar.
+              Cheesecake caramels ice cream liquorice sweet cotton candy dessert brownie.</p>
+          </article>
+        </div>
+      </section>
+      
+
+      <section id="about-us" class="mooc">
+        <div class="text centered-flex">
+          <article>
+            <h2 class="section-title">About Us</h2>
+            <h3>Who are we ?</h3>
+            <p>Cake sugar plum fruitcake candy canes chocolate jelly beans candy biscuit lollipop. Icing jelly gummi bears pudding. Candy apple pie sweet roll. Muffin caramels I love.</p>
+            <p>Icing chocolate cake chocolate topping jelly-o caramels wafer caramels brownie.
+              Brownie tootsie roll I love jujubes I love I love sesame snaps. Bear claw cupcake tootsie roll tiramisu I love chocolate bar.
+              Cheesecake caramels ice cream liquorice sweet cotton candy dessert brownie.</p>
+
+            <h3>What will you learn ?</h3>
+            <p>Cake sugar plum fruitcake candy canes chocolate jelly beans candy biscuit lollipop. Icing jelly gummi bears pudding. Candy apple pie sweet roll. Muffin caramels I love.</p>
+            <p>Icing chocolate cake chocolate topping jelly-o caramels wafer caramels brownie.
+              Brownie tootsie roll I love jujubes I love I love sesame snaps. Bear claw cupcake tootsie roll tiramisu I love chocolate bar.
+              Cheesecake caramels ice cream liquorice sweet cotton candy dessert brownie.</p>
+          </article>
+        </div>
+        <div class="media-container">
+          <img src="https://img.nrj.fr/lqkKYS15Yp4Pr-JjScf1VTAHrFI=/http://media.nrj.fr/436x327/2012/12/villagepeoplewmcy_637653.jpg" alt="Notre photo">
+        </div>
+      </section>
     </main>
   </div>
 </template>
@@ -37,7 +50,7 @@
 <script>
 import Header from "@/components/Header";
 import Card from "@/components/Card";
-import {MoocService} from "@/assets/data/MoocService"
+import MoocService from "@/assets/data/MoocService"
 export default {
   name: "Home",
   components: {
@@ -53,6 +66,76 @@ export default {
 </script>
 
 <style scoped>
+/*** Z-index are setted so the card are above the header, and not behind */
+.main { z-index: 1; }
+.header { z-index: -1; }
+.flex-container {
+  margin: -150px auto 100px;
+  width: 70%;
+}
+
+.mooc {
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  background: var(--highligth);
+  overflow: hidden;
+}
+
+.media-container {
+  width: 40%;
+}
+
+.video {
+  width: 90%;
+  height: 90%;
+}
+
+.media-container img {
+  width: 100%;
+}
+
+.mooc .text {
+  width: 60%;
+  height: auto;
+  padding: 40px 20px;
+  color: #28536B;
+  flex-flow: column;
+}
+
+.text article {
+  width: 90%;
+  height: auto;
+  padding: 70px;
+  border: solid 2px white;
+}
+.text article h2 {
+  margin: 0 0 30px;
+}
+
+.text article h3 {
+  margin: 15px 0;
+  color: var(--dark);
+}
+
+.img-banner {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.img-banner img {
+  width: 100%;
+}
+
+#about-us {
+  background: white;
+}
+
+#about-us article {
+  border-color: #D4AF37;
+}
+
 
 
 

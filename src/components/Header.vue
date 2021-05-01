@@ -1,7 +1,12 @@
 <template>
   <header id="main-header">
-    <h1 id="main-title">Veggie's fest</h1>
-    <p id="subtitle">A Mooc for Foodies</p>
+    <div class="frame">
+      <div class="border">
+        <h1 id="main-title">Veggie's Fest</h1>
+        <p id="subtitle">A Mooc for Foodies</p>
+      </div>
+    </div>
+
   </header>
 </template>
 
@@ -14,47 +19,46 @@ export default {
 <style scoped>
 #main-header {
   width: 100%;
-  height: 80vh;
-  background-image: url("../assets/images/dips.png");
+  height: 75vh;
+  background-image: url("https://www.doitinparis.com/files/2019/bars-restos-food/restos-branches/02/terra-restaurant/thumbs-1180x525/restaurant-terra-paris.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 
+.frame {
+  width: 50%;
+  height: 50%;
+  background: #D4AF37;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  top: 10vh;
+}
+
+.border {
+  width: 92%;
+  height: 85%;
+  border: solid white 2px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
 #main-title {
   color: var(--dark);
   font-size: 4vw;
   font-family: var(--title-font);
-  margin: 0;
-  position: absolute;
-  top: 200px;
-  right: 30vw;
+  margin: 0 0 20px;
 }
 
 #subtitle {
-  color: var(--light);
+  color: var(--dark);
   font-size: 2vw;
-  position: absolute;
-  top: 300px;
-  right: 15vw ;
 }
 
-
-.small-header {
-  width: 100%;
-  height: 40vh;
-  background-image: url("https://webunwto.s3.eu-west-1.amazonaws.com/styles/article_main_image/s3/2020-05/gastronomy_0.jpg?itok=zOigBNjV");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.small-main-title {
-  width: 100%;
-  text-align: center;
-  font-size: 35px;
-  position: absolute;
-  top: 12vh;
-  color: var(--highligth);
-  font-family: var(--title-font);
-}
 </style>

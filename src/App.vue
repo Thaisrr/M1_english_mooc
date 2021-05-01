@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Nav/>
-    <RouterView class="router"/>
+    <RouterView id="router"/>
     <Footer/>
   </div>
 </template>
@@ -23,7 +23,9 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Oxygen&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Cabin+Sketch|Fredericka+the+Great|Orbitron|Press+Start+2P|VT323&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=Raleway:wght@300&display=swap');
 
 * {
   --main: #75B9BE;
@@ -33,19 +35,20 @@ export default {
   --mainSecondary: #75ABBC;
   --highligth: #D4AF37;
   --main-font: 'Open Sans', sans-serif;
-  --secondary-font: 'Oxygen', sans serif;
-  --title-font: 'Fredericka the Great', sans serif;
+  --secondary-font: 'Raleway', sans serif;
+  --title-font: 'Arvo', serif;
 }
 
 body {
   font-family: var(--main-font);
   color: var(--secondary);
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 h2, h3, h4 {
   font-family: var(--secondary-font);
+  letter-spacing: 1px;
 }
 
 h2 {
@@ -58,6 +61,25 @@ h3 {
 
 h4 {
   color: var(--dark);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.centered-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+main {
+  width: 70%;
+  margin: 50px auto;
+  max-width: 1500px;
 }
 
 .a:link, footer a:link, .a:visited, footer a:visited {
@@ -77,15 +99,6 @@ h4 {
   outline: none;
 }
 
-main {
-  width: 70%;
-  margin: 50px auto;
-  max-width: 1500px;
-}
-
-.router {
-  min-width: 85vh;
-}
 
 .header-img {
   display: none;
@@ -149,7 +162,7 @@ main {
 .button:hover {
   border-color: var(--main);
   font-weight: bolder;
-}
+}*/
 
 * {
   box-sizing: border-box;

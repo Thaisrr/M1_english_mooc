@@ -1,18 +1,24 @@
 <template>
   <nav id="mainNav">
-    <ul class="nav-list flex-container">
+    <ul class="nav-list">
       <li class="nav-item">
-        <router-link to="home" class="nav-link">Home</router-link>
+        <router-link :to="{name: 'home'}" class="nav-link" active-class="nav-active">
+          <span class="round"></span>
+          <span class="text">Home</span>
+        </router-link>
       </li>
       <li v-for="(week, index) of weeks" :key="index"  class="nav-item">
-        <router-link  class="nav-link" :to="{name: 'week', query: {week: JSON.stringify(week)}}">{{number_week(week)}} Week</router-link>
+        <router-link  class="nav-link" :to="{name: 'week', params: {id: week.number}}"  active-class="nav-active">
+          <span class="round"></span>
+          <span class="text">{{number_week(week)}} Week</span>
+        </router-link>
       </li>
     </ul>
   </nav>
 </template>
 
 <script>
-import {MoocService} from "@/assets/data/MoocService";
+import MoocService from "@/assets/data/MoocService";
 
 export default {
   name: "Nav",
@@ -35,43 +41,63 @@ export default {
 </script>
 
 <style scoped>
+
+
 #mainNav {
   width: 100%;
-  height: 60px;
+  padding: 20px 0;
   background-color: white;
-  font-size: 1.5rem;
-  -webkit-box-shadow: 0px 1px 5px 0px var(--dark);
-  -moz-box-shadow: 0px 1px 5px 0px var(--dark);
-  box-shadow: 0px 1px 5px 0px var(--dark);
+  font-size: 1.2rem;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 10;
 }
 
 .nav-list {
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
   list-style: none;
   height: 100%;
-  width: 70%;
-  justify-content: flex-end;
+  width: 90%;
 }
 
 .nav-item {
-  display: inline-block;
-  padding: 0 0 0 20px;
-
+  height: 50px;
 }
 
+
 .nav-link {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
-  color: var(--main);
+  color: var(--dark);
   padding: 5px;
   font-family: var(--main-font);
   margin: 10px;
+  position: relative;
 }
 
-.nav-link:hover {
-  color: var(--light);
-  border-top: var(--dark) solid;
-  border-bottom: none;
+
+.round {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-color: #D4AF37;
+  border-radius: 50%;
+  top: calc( 50% - 20px );
+  display: none;
 }
+
+
+.nav-link:hover .round, .nav-active .round {
+  display: block;
+}
+
+.text {
+  z-index: 1;
+}
+
 </style>

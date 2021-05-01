@@ -1,21 +1,25 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from "vue-router";
+import Embed from 'v-video-embed';
 import Recipe from "@/components/Recipe";
 import Week from "@/components/Week";
 import Home from "@/components/Home";
+import vuetify from './plugins/vuetify';
+import MoocService from "@/assets/data/MoocService.js";
 
 
 Vue.config.productionTip = false
 Vue.use(VueRouter);
+Vue.use(Embed);
 
 const routes = [
   {path: '/home', name: 'home', component: Home},
   {
-    path: '/week',
+    path: '/week/:id',
     name: 'week',
     component: Week,
-    props: route => ({week: JSON.parse(route.query.week)})
+    props: route => ({week: MoocService.getWeekById(route.params.id) })
   },
   {
     path: '/recipe',
@@ -32,5 +36,6 @@ const router = new VueRouter({
 
 new Vue({
   router,
-  render: h => h(App),
+  vuetify,
+  render: h => h(App)
 }).$mount('#app')

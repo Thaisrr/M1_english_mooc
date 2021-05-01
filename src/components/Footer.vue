@@ -2,75 +2,54 @@
 
   <footer>
     <div class="flex-container">
-      <section>
-        <h4>Nous suivre</h4>
+      <section v-for="(week, index) of weeks" :key="index">
+        <h4>Week {{index + 1}}</h4>
         <ul>
-          <li>
-            <a target="_blank" href="https://www.facebook.com/DawanFrance/">Facebook</a>
-          </li>
-          <li>
-            <a target="_blank" href="https://www.linkedin.com/company/dawan/?originalSubdomain=fr">Linkedin</a>
-          </li>
-          <li>
-            <a target="_blank" href="https://twitter.com/dawanfrance?lang=fr">Twitter</a>
-          </li>
-          <li>
-            <a target="_blank" href="https://www.dawan.fr">Dawan.fr</a>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h4>Nous connaître</h4>
-        <ul>
-          <li>
-            <a href="mailto:contact@dawan.fr">contact@dawan.fr</a>
-          </li>
-          <li>
-            <a href="tel:+33972377373">+33 (0)9 72 73 37 37</a>
-          </li>
-          <li>
-            <a target="_blank" href="https://g.page/Dawan-nantes?share">33 Boulevard Vincent Gâche, 44200 Nantes</a>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h4>Nos Engagements</h4>
-        <ul>
-          <li>
-            <a href="#">Mentions Légales</a>
-          </li>
-          <li>
-            <a href="#">Cookies</a>
+          <li v-for="(recipe, index) of week.recipes" :key="index">
+            <router-link class="links" :to="{name: 'recipe', query: {recipe: JSON.stringify(recipe)}}">{{recipe.name}}</router-link>
           </li>
         </ul>
       </section>
     </div>
-    <p><i>Copyright - 2020</i> | <i>Réalisation Dawan</i></p>
+    <p><i>Copyright - 2021</i> | <i>Université Catholique de Lille</i></p>
   </footer>
 </template>
 
 <script>
+import MoocService from "@/assets/data/MoocService.js"
+
 export default {
-  name: "Footer"
+  name: "Footer",
+  data() {
+    return {
+      weeks : MoocService.getAllWeeks()
+    }
+  }
 }
 </script>
 
 <style scoped>
+
+
 footer {
   width: 100%;
   padding: 30px;
   background-color: var(--dark);
-  color: var(--light);
+  color: white;
 }
 
 footer .flex-container {
-  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto 30px;
+  width: 80%;
   align-items: flex-start;
 }
 
 footer h4 {
-  color: var(--light);
-  border-bottom: thin solid var(--light);
+  color: white;
+  border-bottom: thin solid white;
+  margin-bottom: 20px;
 }
 
 footer ul {
@@ -90,6 +69,18 @@ footer p {
 }
 
 footer section {
-  width: 25%;
+  width: 20%;
 }
+
+.links:link, .links:visited {
+  color: #D4AF37;
+  text-decoration: none;
+}
+
+.links:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 </style>
