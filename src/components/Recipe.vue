@@ -1,7 +1,7 @@
 <template>
   <div>
     <div id="all">
-      <div id="image">
+      <div id="image" :style="`background-image: url('${recipe.image}')`">
 
       </div>
       <div id="text">
@@ -19,14 +19,14 @@
         </section>
 
           <v-expansion-panels class="expansion" >
-            <v-expansion-panel>
+            <v-expansion-panel v-if="recipe.transcription" class="panel">
                 <v-expansion-panel-header class="header">Video Transcription</v-expansion-panel-header>
                 <v-expansion-panel-content class="content">
                   <h3>Transcription</h3>
                   <div v-html="recipe.transcription"></div>
                 </v-expansion-panel-content>
             </v-expansion-panel>
-            <v-expansion-panel>
+            <v-expansion-panel class="panel">
               <v-expansion-panel-header class="header">Recipe</v-expansion-panel-header>
               <v-expansion-panel-content class="content">
                 <h3>Ingredients</h3>
@@ -113,7 +113,6 @@ export default {
 
 
 #image {
-  background-image: url("https://static.youmiam.com/images/recipe/1500x1000/raviolis-panais-bleu-1364910?placeholder=web_recipe&sig=470d911dd5d8bdc1ce44eb940c4cf3bb87e8e546&v3");
 }
 
 
@@ -159,6 +158,10 @@ h3 {
   letter-spacing: 1px;
 }
 
+.panel:first-child {
+  margin-top: 30px;
+}
+
 .expansion ul {
   padding-left: 30px;
 }
@@ -170,6 +173,8 @@ h3 {
 
 .content {
   color: var(--dark) !important;
+  padding: 0 30px 50px;
+
 }
 
 .header {

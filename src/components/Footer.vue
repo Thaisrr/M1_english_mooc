@@ -2,11 +2,11 @@
 
   <footer>
     <div class="flex-container">
-      <section v-for="(week, index) of weeks" :key="index">
-        <h4>Week {{index + 1}}</h4>
+      <section v-for="(week, w_index) of weeks" :key="w_index">
+        <h4>Week {{w_index + 1}}</h4>
         <ul>
-          <li v-for="(recipe, index) of week.recipes" :key="index">
-            <router-link class="links" :to="{name: 'recipe', query: {recipe: JSON.stringify(recipe)}}">{{recipe.name}}</router-link>
+          <li v-for="(recipe, r_index) of week.recipes" :key="r_index">
+            <router-link class="links" :to="{name: 'recipe', params: {week: week.number, recipe: r_index}}">{{recipe.name}}</router-link>
           </li>
         </ul>
       </section>

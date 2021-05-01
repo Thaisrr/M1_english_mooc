@@ -29,8 +29,6 @@ export default {
   },
   methods: {
     number_week(week) {
-      console.log("coucou from nav -> number _week");
-      console.log(week);
       if(week.number === 1) return '1rst'
       else if (week.number === 2) return '2nd'
       else if (week.number === 3) return '3rd'

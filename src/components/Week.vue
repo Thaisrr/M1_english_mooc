@@ -2,7 +2,7 @@
   <div id="router">
     <div id="absolute">
       <div id="corner">
-        <img src="https://media-cdn.tripadvisor.com/media/photo-s/1a/55/21/35/food.jpg">
+        <img :src="week.image">
       </div>
       <header class="centered-flex">
         <div class="text">
@@ -11,10 +11,16 @@
           <h3>{{week.recipes.length > 1 ? 'Recipes' : 'Recipe'}} you'll learn :</h3>
           <nav>
             <ul>
-              <li v-for="(recipe, index) of week.recipes" :key="index">
-                <router-link :to="{name: 'recipe', params: {week: week.number, recipe: index}}">{{recipe.name}}</router-link>
+              <li class="recipes" v-for="(recipe, index) of week.recipes" :key="index">
+                <router-link class="links" :to="{name: 'recipe', params: {week: week.number, recipe: index}}">{{recipe.name}}</router-link>
               </li>
             </ul>
+          </nav>
+          <nav>
+            <router-link class="go" :to="{name: 'recipe', params: {week: week.number, recipe: 0}}">
+              <span>Go to the first lesson !</span>
+              <v-icon class="icon" large>mdi-chevron-right</v-icon>
+            </router-link>
           </nav>
         </div>
       </header>
@@ -75,7 +81,7 @@ header {
   top: 8vw;
   left: 15vw;
   background: #D4AF37;
-  z-index: 15;
+  z-index: 1;
 }
 
 header .text {
@@ -99,5 +105,35 @@ header p {
   color: var(--dark);
 }
 
+.recipes {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+.links:link, .links:visited {
+  color: var(--dark);
+}
+
+.icon {
+  color: white;
+}
+
+.go:link, .go:visited {
+  display: block;
+  margin: 30px 0;
+  padding: 15px;
+  background: #28536B;
+  color: white;
+  width: auto;
+  text-align: center;
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+
+.go:hover span {
+  text-decoration: underline;
+  font-weight: bold;
+}
 
 </style>
