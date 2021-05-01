@@ -21,8 +21,9 @@ class MoocService {
         }
     };
 
-    getRecipeByWeekAndId = (week, recipe_rank) => {
-        return this.getWeekById(week).recipes.find(recipe => recipe.rank = recipe_rank)
+    getRecipeByWeekAndIndex = (week, recipe) => {
+        const target_week = this.getWeekById(week);
+        return  target_week.recipes[recipe]
     }
 }
 

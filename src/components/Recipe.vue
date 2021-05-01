@@ -1,46 +1,66 @@
 <template>
   <div>
-    <div id="main">
+    <div id="all">
       <div id="image">
+
       </div>
       <div id="text">
-        <h2>{{recipe.name}}</h2>
-        <p>{{recipe.intro}}</p>
+        <div class="frame">
+          <div class="border">
+            <h2>{{recipe.name}}</h2>
+            <p>{{recipe.intro}}</p>
+          </div>
+        </div>
+        <section class="section">
+          <div class="media-container">
+            <iframe class="video" :src="recipe.video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
 
-        <section id="video">
-          <h3>Video</h3>
-          <div v-html="video"></div>
         </section>
 
-          <v-expansion-panels flat>
-            <v-expansion-panel flat>
-                <v-expansion-panel-header>Video Transcription</v-expansion-panel-header>
-                <v-expansion-panel-content>
+          <v-expansion-panels class="expansion" >
+            <v-expansion-panel>
+                <v-expansion-panel-header class="header">Video Transcription</v-expansion-panel-header>
+                <v-expansion-panel-content class="content">
                   <h3>Transcription</h3>
+                  <div v-html="recipe.transcription"></div>
                 </v-expansion-panel-content>
             </v-expansion-panel>
             <v-expansion-panel>
-              <v-expansion-panel-header>Recipe</v-expansion-panel-header>
-              <v-expansion-panel-content>
+              <v-expansion-panel-header class="header">Recipe</v-expansion-panel-header>
+              <v-expansion-panel-content class="content">
                 <h3>Ingredients</h3>
-                <p>Persons : 2</p>
+                <p>Persons :
+                  <button class="bold" :disabled="nbPersons < 2" v-on:click="changeNbPersons(-1)">-</button>
+                  {{nbPersons}}
+                  <button class="bold" v-on:click="changeNbPersons(+1)">+</button>
+                </p>
                 <ul>
-                  <li v-for="(ing, index) of recipe.ingredients" :key="index"><span class="bold">{{ing.quantity}}{{ing.quantity}}</span> {{ing.name}}</li>
+                  <li v-for="(ing, index) of recipe.ingredients" :key="index"><span class="bold">{{getQuantity(ing)}}{{ing.unity}}</span> {{ing.name}}</li>
                 </ul>
                 <h3>Recipe</h3>
                 <ul>
                   <li v-for="(step, index) of recipe.steps" :key="index">
-                    <span class="bold">{{step.number}}</span> {{step.text}}</li>
+                    <span class="bold">{{step.number}}. </span> {{step.text}}</li>
                 </ul>
               </v-expansion-panel-content>
             </v-expansion-panel>
           </v-expansion-panels>
 
-        <section>
-
-        </section>
-
-
+      </div>
+      <div class="buttons">
+        <router-link class="btn-link" :to="{name: 'week', params: {id: week.number}}">
+          <v-icon class="icon" large>mdi-chevron-left</v-icon>
+          <span>Return to Summary</span>
+        </router-link>
+        <router-link v-if="isThisTheEnd()" class="btn-link" :to="{name: 'end', params: {week: week.number}}">
+          <span>Finish Lesson</span>
+          <v-icon class="icon" large>mdi-chevron-right</v-icon>
+        </router-link>
+        <router-link v-else class="btn-link" :to="{name: 'recipe', params: {week: week.number, recipe: week.recipes.indexOf(recipe) + 1}}">
+          <span>Next Lesson</span>
+          <v-icon class="icon" large>mdi-chevron-right</v-icon>
+        </router-link>
       </div>
     </div>
 
@@ -52,43 +72,149 @@ export default {
   name: "Recipe",
   data() {
     return {
-      video: `<iframe src="https://www.youtube.com/embed/iMg_YrqCsng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+      video: ``,
       length: 3,
       window: 0,
+      nbPersons: this.recipe.persons
     }
   },
   props: {
-    recipe: Object
-  }
+    recipe: Object,
+    week: Object
+  },
+  methods: {
+    getQuantity(ingredient) {
+      let result;
+      switch (ingredient.unity) {
+        case 'ml' || 'l' || 'cl' || 'g' || 'kg' || 'cup' :
+          console.log('decimal')
+          result = Math.round(((ingredient.quantity / this.recipe.persons) * this.nbPersons) * 100) / 100 ;
+          return (result <= 0) ? 0.1 : result;
+        default:
+          console.log('default')
+          result = Math.round((ingredient.quantity / this.recipe.persons) * this.nbPersons)
+          return  (result <= 0) ? 1 : result;
+      }
+    },
+    changeNbPersons(changer) {
+      this.nbPersons += changer;
+    },
+    isThisTheEnd() {
+      const recipe_index = this.week.recipes.indexOf(this.recipe);
+      console.log(this.week.recipes);
+      console.log('index : ', recipe_index)
+      return !this.week.recipes[recipe_index + 1];
+    }
+  },
 }
 </script>
 
 <style scoped>
-#main {
-  display: flex;
-  justify-content: space-between;
-}
+
+
 #image {
-  height: calc(100vh - 100px);
-  width: 30%;
-  overflow: hidden;
   background-image: url("https://static.youmiam.com/images/recipe/1500x1000/raviolis-panais-bleu-1364910?placeholder=web_recipe&sig=470d911dd5d8bdc1ce44eb940c4cf3bb87e8e546&v3");
-  background-position: center;
 }
+
 
 #text {
-  width: 60%;
-  padding-right: 100px ;
+  width: 70%;
+  margin: 10px auto 0;
+  padding: 0 50px 50px;
+  background: var(--dark);
 }
 
-section { width: 100%}
-section > * {width: 100%}
-h2, h3 {
+#text > * {
+  margin-top: -5vh;
+}
+
+.section {
+  margin: 0 auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.media-container {
+  margin: auto;
+  width: 40vw;
+  height: calc(60vh * 7 / 9);
+}
+
+iframe {
+  width: 100% !important;
+  height: 90% !important;
+}
+
+.media-container img {
+  width: 100%;
+}
+
+section {
+  width: 100%;
+}
+h3 {
   margin: 30px 0;
+  color: var(--dark);
+  font-family: var(--secondary-font);
+  letter-spacing: 1px;
 }
 
-section ul {
+.expansion ul {
   padding-left: 30px;
 }
 
+.expansion {
+  width: 40vw;
+  margin: auto;
+}
+
+.content {
+  color: var(--dark) !important;
+}
+
+.header {
+  color: #D4AF37;
+  font-size: 1.2em;
+}
+
+.buttons {
+  width: 70%;
+  margin: auto;
+
+}
+
+.btn-link:link, .btn-link:visited {
+  width: 70%;
+  background: #D4AF37;
+  color: #28536B;
+  font-size: 1.5em;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding: 20px 0;
+}
+
+.btn-link:first-child {
+  width: 30%;
+  background: white;
+  color: #D4AF37;
+}
+
+.btn-link:hover span {
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.btn-link .icon {
+  color: var(--dark);
+}
+
+.btn-link:first-child .icon {
+  color: #D4AF37;
+}
+
+.btn-link:hover .icon {
+  text-decoration: none !important;
+}
 </style>

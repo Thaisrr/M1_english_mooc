@@ -63,6 +63,48 @@ h4 {
   color: var(--dark);
 }
 
+#image {
+  height: 35vh;
+  width: 100%;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.frame {
+  width: 40vw;
+  height: auto;
+  background: #D4AF37;
+  margin: 0 auto 50px;
+  padding: 30px;
+  position: relative;
+  top: -8vh;
+}
+
+.border {
+  width: 100%;
+  padding: 35px;
+  border: solid 1px white;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--dark);
+}
+
+.border h2{
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.bold {
+  color: var(--secondary);
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+
 .flex-container {
   display: flex;
   justify-content: space-between;

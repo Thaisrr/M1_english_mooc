@@ -12,7 +12,7 @@
           <nav>
             <ul>
               <li v-for="(recipe, index) of week.recipes" :key="index">
-                <router-link :to="{name: 'recipe', query: {recipe: JSON.stringify(recipe)}}">{{recipe.name}}</router-link>
+                <router-link :to="{name: 'recipe', params: {week: week.number, recipe: index}}">{{recipe.name}}</router-link>
               </li>
             </ul>
           </nav>
