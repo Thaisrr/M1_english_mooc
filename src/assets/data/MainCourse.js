@@ -113,5 +113,43 @@ export const MainCourse = {
                 "<p>&nbsp;<br />Pre-heat the oven to 200 degrees&nbsp;Celsius.&nbsp;Meanwhile, cut the gingerbread crust.&nbsp;Cut the butter into small dice, crumble the&nbsp;gingerbread&nbsp;and&nbsp;mix&nbsp;them together.&nbsp;Take a baking tray, put a sheet of baking&nbsp;paper&nbsp;and spread the mixture on it.&nbsp;Put the tray in the oven and cook it for 10 minutes. Watch it, the crumble should not burn. When&nbsp;it&rsquo;s&nbsp;done, take it off the oven and let it rest for 10 minutes.&nbsp;</p>\n" +
                 "<p><br />Peel the red onion, take a&nbsp;board&nbsp;and chop it very finely.&nbsp;&nbsp;<br />Take a plate, spread the lentils on it. Put the egg, the crumble, some enoki mushrooms. Season the dish with some olive oil,&nbsp;salt&nbsp;and pepper.&nbsp;</p>" ,
         },
-    ]
+    ],
+    quiz: [
+        {
+            question: "What kind of mushroom do we need ?",
+            answers: [
+                { text: "White button mushroom", isCorrect: false},
+                { text: "Portobello mushroom", isCorrect: false},
+                { text: "I hate mushroom", isCorrect: false},
+                { text: "Enoki mushroom", isCorrect: true},
+            ]
+        },
+        {
+            question: "What's the right temperature for the perfect egg? ",
+            answers: [
+                { text: "60°C", isCorrect: false},
+                { text: "64°C", isCorrect: true},
+                { text: "54°C", isCorrect: false},
+                { text: "52°C", isCorrect: false},
+            ]
+        },
+        {
+            question: "And for how long ?",
+            answers: [
+                { text: "45 minutes", isCorrect: true},
+                { text: "40 minutes", isCorrect: false},
+                { text: "1 hour", isCorrect: false},
+                { text: "Half an hour", isCorrect: false},
+            ]
+        },
+        {
+            question: "How much lentils we need for this recipe ? ",
+            answers: [
+                { text: "150g", isCorrect: true},
+                { text: "200g", isCorrect: false},
+                { text: "50g", isCorrect: false},
+                { text: "250g", isCorrect: false},
+            ]
+        }
+    ],
 }
