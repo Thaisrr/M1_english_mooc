@@ -33,10 +33,7 @@ const routes = [
     path: '/recipe/:week/:recipe',
     name: 'recipe',
     component: Recipe,
-    props: route => ({
-      recipe: MoocService.getRecipeByWeekAndIndex(route.params.week, route.params.recipe),
-      week : MoocService.getWeekById(route.params.week)
-    })
+
   },
   {path: '*', redirect: 'home'}
 ];

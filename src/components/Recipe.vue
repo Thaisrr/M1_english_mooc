@@ -73,6 +73,7 @@
 </template>
 
 <script>
+import MoocService from "@/assets/data/MoocService.js";
 export default {
   name: "Recipe",
   data() {
@@ -80,12 +81,10 @@ export default {
       video: ``,
       length: 3,
       window: 0,
-      nbPersons: this.recipe.persons
+      nbPersons: this.recipe.persons,
+      recipe: MoocService.getRecipeByWeekAndIndex(this.$route.params.week, this.$route.params.recipe),
+      week : MoocService.getWeekById(this.$route.params.week)
     }
-  },
-  props: {
-    recipe: Object,
-    week: Object
   },
   methods: {
     getQuantity(ingredient) {
