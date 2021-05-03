@@ -34,7 +34,7 @@
           </article>
         </div>
         <div class="media-container">
-          <img src="https://mvistatic.com/photosmvi/2020/06/09/P23028309D4128945G.jpg" alt="Notre photo">
+          <img :src="require('../assets/images/us.png')" alt="Notre photo">
         </div>
       </section>
     </main>
