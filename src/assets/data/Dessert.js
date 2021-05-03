@@ -117,7 +117,7 @@ export const Dessert = {
                 },
                 {
                     number: 2,
-                    text: "In a second saucepan Whitten the 4 egg yoks with three whole eggs and the sugar."
+                    text: "In a second saucepan whiten the 4 egg yolks with three whole eggs and the sugar."
                 },
                 {
                     number: 3,

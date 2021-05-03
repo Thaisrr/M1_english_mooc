@@ -5,8 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "copy": "cp _redirect ./dist",
-    "prod": "npm run build && npm run copy",
+    "copy": "cp public/_redirects ./dist",
+    "prod": "npm run build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
