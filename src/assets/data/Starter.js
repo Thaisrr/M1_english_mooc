@@ -28,6 +28,10 @@ export const Starter = {
                     number: 1,
                     text: "Danish dragée lollipop jelly beans jelly beans brownie sweet dragée. Sweet croissant sugar plum cake halvah. Marshmallow bonbon croissant jujubes apple pie. Tiramisu lemon drops marzipan."
                 },
+                {
+                    number: 2,
+                    text: "Danish dragée lollipop jelly beans jelly beans brownie sweet dragée. Sweet croissant sugar plum cake halvah. Marshmallow bonbon croissant jujubes apple pie. Tiramisu lemon drops marzipan."
+                },
             ],
         }
     ]
