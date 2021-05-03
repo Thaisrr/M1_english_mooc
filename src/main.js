@@ -6,6 +6,7 @@ import Recipe from "@/components/Recipe";
 import Week from "@/components/Week";
 import Home from "@/components/Home";
 import vuetify from './plugins/vuetify';
+import MoocService from "@/assets/data/MoocService.js";
 import EndLesson from "@/components/EndLesson.vue";
 
 
@@ -20,16 +21,22 @@ const routes = [
     path: '/end-week/:week',
     name: 'end',
     component: EndLesson,
+    props: route => ({week: MoocService.getWeekById(route.params.week) })
   },
   {
     path: '/week/:id',
     name: 'week',
     component: Week,
+    props: route => ({week: MoocService.getWeekById(route.params.id) })
   },
   {
     path: '/recipe/:week/:recipe',
     name: 'recipe',
     component: Recipe,
+    props: route => ({
+      recipe: MoocService.getRecipeByWeekAndIndex(route.params.week, route.params.recipe),
+      week : MoocService.getWeekById(route.params.week)
+    })
   },
   {path: '*', redirect: 'home'}
 ];

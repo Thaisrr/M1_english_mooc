@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="all" v-if="recipe && week">
+    <div id="all">
       <div id="image" :style="`background-image: url('${recipe.image}')`">
 
       </div>
@@ -73,7 +73,6 @@
 </template>
 
 <script>
-import MoocService from "@/assets/data/MoocService.js";
 export default {
   name: "Recipe",
   data() {
@@ -81,15 +80,16 @@ export default {
       video: ``,
       length: 3,
       window: 0,
-      nbPersons: null,
-      recipe: null,
-      week: null
+      nbPersons: this.recipe.persons,
     }
   },
-  mounted() {
-    this.recipe = MoocService.getRecipeByWeekAndIndex(this.$route.params.week, this.$route.params.recipe)
-    this.week = MoocService.getWeekById(this.$route.params.week)
-    this.nbPersons = this.recipe.persons;
+  props: {
+    recipe: {
+      type: Object,
+    },
+    week: {
+      type: Object,
+    }
   },
   methods: {
     getQuantity(ingredient) {

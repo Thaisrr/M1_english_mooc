@@ -1,5 +1,5 @@
 <template>
-  <div id="router" v-if="week">
+  <div id="router">
     <div id="absolute">
       <div id="corner" :style="`background-image: url(${week.image})`">
       <header class="centered-flex">
@@ -28,18 +28,15 @@
 </template>
 
 <script>
-import MoocService from "@/assets/data/MoocService.js";
-
 export default {
   name: "Week",
+  props: {
+    week: Object
+  },
   data: () => ({
     length: 3,
     window: 0,
-    week: undefined
   }),
-  mounted() {
-    this.week = MoocService.getWeekById(this.$route.params.week)
-  },
   computed: {
     number_week() {
       if(this.week) console.log(this.week)
