@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="image"></div>
+    <div id="image" :style="`background-image: url(${week.image})`"></div>
     <div id="text">
       <div class="frame">
         <div class="border">
@@ -123,7 +123,8 @@ export default {
 }
 
 #image {
-  background-image: url("https://static.youmiam.com/images/recipe/1500x1000/raviolis-panais-bleu-1364910?placeholder=web_recipe&sig=470d911dd5d8bdc1ce44eb940c4cf3bb87e8e546&v3");
+  background-size: cover;
+  background-position: center;
 }
 
 #text {

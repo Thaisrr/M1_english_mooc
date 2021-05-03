@@ -10,7 +10,7 @@ export const MainCourse = {
             image: require('../images/lentils.png'),
             intro: "For the main dish of our holiday menu, we will cook a low temperature egg and serve it with green lentils, gingerbread crumble and enoki mushrooms.",
             persons: 4,
-            video: "https://www.youtube.com/embed/RFfudedp6Po?list=RDMM_wxoPZijXU0",
+            video: "https://www.youtube.com/embed/_Rwym4sx8xw",
             ingredients: [
                 {
                     quantity: 4,

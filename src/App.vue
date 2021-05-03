@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Nav/>
-    <RouterView id="router"/>
+      <RouterView id="router"/>
     <Footer/>
   </div>
 </template>
@@ -15,11 +15,13 @@ export default {
   components: {
     Nav,
     Footer
-  }
+  },
 }
 </script>
 
 <style>
+
+
 @import url('https://fonts.googleapis.com/css?family=Oxygen&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Cabin+Sketch|Fredericka+the+Great|Orbitron|Press+Start+2P|VT323&display=swap');
