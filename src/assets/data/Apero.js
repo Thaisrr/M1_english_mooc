@@ -66,13 +66,13 @@ export const Apero = {
                     text: "Chop the coriander finely and add it to the preparation, keep a few leaves for the decoration. "
                 }
             ],
-            transcription: "<p>Alright folks, here is an easy one. A nice, orange, carrot and almond dips.&nbsp;</p>\n" +
-                "<p><br />Heat the oven at a 200&deg;C.&nbsp;</p>\n" +
-                "<p>As you guessed, we&rsquo;ll start by scrapping the carrots.&nbsp;To cook them faster, chop them. Put them in an oven tray, drizzle them with&nbsp;olive oil, two&nbsp;tablespoons, and put the tray in the oven for twenty minutes.&nbsp;</p>\n" +
-                "<p><br />Take the tray of the oven and let it cool down for twenty minutes.&nbsp;</p>\n" +
-                "<p><br />Once your carrots are at room temperature, put them in the blender&nbsp;alongside&nbsp;almond paste, olive oil, garlic, cumin seed, lemon juice, salt and pepper. </p>\n" +
-                "<p><br />Mix until you have a smooth&nbsp;even paste.&nbsp;</p>\n" +
-                "<p><br />Now we&rsquo;ll take care of the coriander, pick the nicest leaves, and chop the rest of it.&nbsp;<br />Just combine the coriander and the carrot mix, and you&rsquo;re down.&nbsp;</p>" ,
+            transcription: "<p>Alright folks, here is an easy one. A nice, orange, carrot and almond dips. </p>\n" +
+                "<p><br />Heat the oven at a 200&deg;C. </p>\n" +
+                "<p>As you guessed, we&rsquo;ll start by scrapping the carrots. To cook them faster, chop them. Put them in an oven tray, drizzle them with olive oil, two tablespoons, and put the tray in the oven for twenty minutes. </p>\n" +
+                "<p><br />Take the tray of the oven and let it cool down for twenty minutes. </p>\n" +
+                "<p><br />Once your carrots are at room temperature, put them in the blender alongside almond paste, olive oil, garlic, cumin seed, lemon juice, salt and pepper. </p>\n" +
+                "<p><br />Mix until you have a smooth even paste. </p>\n" +
+                "<p><br />Now we&rsquo;ll take care of the coriander, pick the nicest leaves, and chop the rest of it. <br />Just combine the coriander and the carrot mix, and you&rsquo;re down. </p>" ,
         },
         {
             rank: 2,
@@ -142,18 +142,18 @@ export const Apero = {
                     text: "Enjoy !"
                 }
             ],
-            transcription: "<p>You&rsquo;ll&nbsp;need&nbsp;one large&nbsp;beetroot, or&nbsp;two&nbsp;small&nbsp;one. You can&nbsp;choose&nbsp;your&nbsp;beetroot&nbsp;raw, or&nbsp;pre-cooked.&nbsp;Then,&nbsp;you&rsquo;ll&nbsp;need&nbsp;150g of&nbsp;cream&nbsp;cheese, one&nbsp;scallion, and&nbsp;optionnaly, about 30g of&nbsp;walnut&nbsp;kernels.&nbsp;<br />&nbsp;</p>\n" +
-                "<p><br />There&rsquo;s&nbsp;no&nbsp;need&nbsp;for&nbsp;any&nbsp;special&nbsp;kitchen&nbsp;equipment.&nbsp;<br />&nbsp;</p>\n" +
-                "<p><br />Let&rsquo;s&nbsp;start&nbsp;with&nbsp;the first&nbsp;step&nbsp;: cooking the&nbsp;beetroot.&nbsp;It&rsquo;s&nbsp;the harder part of&nbsp;this&nbsp;recipe,&nbsp;so&nbsp;please,&nbsp;be&nbsp;carreful. <br />&nbsp;</p>\n" +
-                "<p><br />Put the&nbsp;whole&nbsp;beet&nbsp;in&nbsp;a&nbsp;large pan of&nbsp;boiling&nbsp;water, and&nbsp;wait&nbsp;40 minutes. Voil&agrave; !&nbsp;</p>\n" +
-                "<p><br />&nbsp;<br />Don&rsquo;t&nbsp;cut&nbsp;or&nbsp;peel&nbsp;the&nbsp;beetroot,&nbsp;it&nbsp;will&nbsp;loose&nbsp;its&nbsp;beautiful&nbsp;purple&nbsp;color. Once the&nbsp;beet&nbsp;is&nbsp;soft,&nbsp;immerse&nbsp;it&nbsp;in cold water, to fixe the&nbsp;color, and let&nbsp;it&nbsp;chill.</p>\n" +
-                "<p>&nbsp;<br />While&nbsp;waiting&nbsp;to cool down,&nbsp;let&rsquo;s&nbsp;peal&nbsp;the&nbsp;scallion.&nbsp;</p>\n" +
-                "<p>&nbsp;<br />Then,&nbsp;we&nbsp;can&nbsp;cut&nbsp;it&nbsp;into&nbsp;thin&nbsp;slices, et&nbsp;reserve&nbsp;for&nbsp;later.&nbsp;</p>\n" +
-                "<p>&nbsp;<br />Next&nbsp;step,&nbsp;we&nbsp;are&nbsp;going&nbsp;to&nbsp;peel&nbsp;the&nbsp;beetroot.&nbsp;Carefull,&nbsp;it&rsquo;s&nbsp;stains&nbsp;a lot,&nbsp;you&nbsp;might&nbsp;want&nbsp;to use&nbsp;a&nbsp;plate.</p>\n" +
-                "<p>&nbsp;<br />Then,&nbsp;cut&nbsp;it&nbsp;in large&nbsp;pieces.&nbsp;</p>\n" +
-                "<p>&nbsp;<br />Ok, last&nbsp;steps, squash the&nbsp;beetroot&nbsp;with&nbsp;the&nbsp;cream&nbsp;cheese,&nbsp;using&nbsp;a fork or a&nbsp;masher,&nbsp;until&nbsp;you&nbsp;get&nbsp;a soft and&nbsp;uniform&nbsp;purple&nbsp;cream.</p>\n" +
-                "<p>&nbsp;<br />Add&nbsp;the&nbsp;scalion,&nbsp;some&nbsp;salt&nbsp;and&nbsp;pepper, and&nbsp;blend&nbsp;it.&nbsp;</p>\n" +
-                "<p>&nbsp;<br />Our&nbsp;dip&nbsp;is&nbsp;now&nbsp;ready. Just pour&nbsp;it&nbsp;into&nbsp;a&nbsp;nice&nbsp;bowl,&nbsp;add&nbsp;some&nbsp;walnuts&nbsp;for&nbsp;decoration, and&nbsp;that&rsquo;s&nbsp;it&nbsp;! Quick and&nbsp;easy.&nbsp;</p>"
+            transcription: "<p>You&rsquo;ll need one large beetroot, or two small one. You can choose your beetroot raw, or pre-cooked. Then, you&rsquo;ll need 150g of cream cheese, one scallion, and optionnaly, about 30g of walnut kernels. <br /> </p>\n" +
+                "<p><br />There&rsquo;s no need for any special kitchen equipment. <br /> </p>\n" +
+                "<p><br />Let&rsquo;s start with the first step : cooking the beetroot. It&rsquo;s the harder part of this recipe, so please, be carreful. <br /> </p>\n" +
+                "<p><br />Put the whole beet in a large pan of boiling water, and wait 40 minutes. Voil&agrave; ! </p>\n" +
+                "<p><br /> <br />Don&rsquo;t cut or peel the beetroot, it will loose its beautiful purple color. Once the beet is soft, immerse it in cold water, to fixe the color, and let it chill.</p>\n" +
+                "<p> <br />While waiting to cool down, let&rsquo;s peal the scallion. </p>\n" +
+                "<p> <br />Then, we can cut it into thin slices, et reserve for later. </p>\n" +
+                "<p> <br />Next step, we are going to peel the beetroot. Carefull, it&rsquo;s stains a lot, you might want to use a plate.</p>\n" +
+                "<p> <br />Then, cut it in large pieces. </p>\n" +
+                "<p> <br />Ok, last steps, squash the beetroot with the cream cheese, using a fork or a masher, until you get a soft and uniform purple cream.</p>\n" +
+                "<p> <br />Add the scalion, some salt and pepper, and blend it. </p>\n" +
+                "<p> <br />Our dip is now ready. Just pour it into a nice bowl, add some walnuts for decoration, and that&rsquo;s it ! Quick and easy. </p>"
         },
         {
             rank: 3,
@@ -238,15 +238,15 @@ export const Apero = {
                     text: "Bake for 22 minutes until golden and puffed. Serve hot."
                 },
             ],
-            transcription: "<p>Today we want to go fancy receiving our friends, so let&rsquo;s bake some&nbsp;gougeres.&nbsp;</p>\n" +
-                "<p><br />Basically,&nbsp;gougere&nbsp;is a&nbsp;salty cheesy cream puff, that you serve as&nbsp;appetizers. The recipe is not too hard to follow, but there&nbsp;is&nbsp;a few steps in which you need to be careful.&nbsp;</p>\n" +
+            transcription: "<p>Today we want to go fancy receiving our friends, so let&rsquo;s bake some gougeres. </p>\n" +
+                "<p><br />Basically, gougere is a salty cheesy cream puff, that you serve as appetizers. The recipe is not too hard to follow, but there is a few steps in which you need to be careful. </p>\n" +
                 "<p>First, preheat your oven at 200&deg;C. </p>\n" +
-                "<p><br />In a medium size&nbsp;saucepan,&nbsp;bring to boil the water, the milk and the butter. <br />Once it&rsquo;s boiling,&nbsp;we take the sauce pan out of the stove and add all the flour at once, and sir quickly and&nbsp;energically. We want a smoot&nbsp;dought.&nbsp;</p>\n" +
-                "<p><br />Then on low heat we&rsquo;re&nbsp;gonna&nbsp;&ldquo;dry&rdquo; the&nbsp;dought&nbsp;for one&nbsp;minute.&nbsp;<br />Let the dough cool down for about a minute.&nbsp;</p>\n" +
-                "<p><br />Then add the eggs one by one while beating&nbsp;hard. Doing that will let micro bubbles of air penetrates the dough. Five minutes should be enough.&nbsp;<br />Then add some&nbsp;comt&eacute;&nbsp;in the&nbsp;dough but&nbsp;keep some for later.&nbsp;</p>\n" +
-                "<p><br />Once your&nbsp;dough&nbsp;is even, fill a pastry bag of it.&nbsp;Open it about this wide&nbsp;<br />Now we just make&nbsp;little balls. We give them five&nbsp;centimetres&nbsp;of space between each one. </p>\n" +
-                "<p><br />Once we have tidy rows of raw&nbsp;gougere,&nbsp;mix the egg yok with a little bit of milk or water, and apply it on top of the balls. This will give a nice and golden&nbsp;color&nbsp;during&nbsp;the baking process.&nbsp;</p>\n" +
-                "<p><br />Finally sprinkle the remaining cheese on top of the&nbsp;gougere&nbsp;and put the trays in the oven for 22&nbsp;minutes.&nbsp;<br />Last advice &hellip; serve hot.&nbsp;</p>\n"
+                "<p><br />In a medium size saucepan, bring to boil the water, the milk and the butter. <br />Once it&rsquo;s boiling, we take the sauce pan out of the stove and add all the flour at once, and sir quickly and energically. We want a smoot dought. </p>\n" +
+                "<p><br />Then on low heat we&rsquo;re gonna &ldquo;dry&rdquo; the dought for one minute. <br />Let the dough cool down for about a minute. </p>\n" +
+                "<p><br />Then add the eggs one by one while beating hard. Doing that will let micro bubbles of air penetrates the dough. Five minutes should be enough. <br />Then add some comt&eacute; in the dough but keep some for later. </p>\n" +
+                "<p><br />Once your dough is even, fill a pastry bag of it. Open it about this wide <br />Now we just make little balls. We give them five centimetres of space between each one. </p>\n" +
+                "<p><br />Once we have tidy rows of raw gougere, mix the egg yok with a little bit of milk or water, and apply it on top of the balls. This will give a nice and golden color during the baking process. </p>\n" +
+                "<p><br />Finally sprinkle the remaining cheese on top of the gougere and put the trays in the oven for 22 minutes. <br />Last advice &hellip; serve hot. </p>\n"
         },
         {
             rank: 4,
@@ -316,12 +316,12 @@ export const Apero = {
                     text: "At the end of the cooking time, leave the shortbread to cool on a rack. "
                 }
             ],
-            transcription: "<p>Now that we have some dips, we thought it would be nice to serve them with a salty&nbsp;sable.&nbsp;For this sable recipe, we simply trade sugar&nbsp;for parmesan cheese.&nbsp;&nbsp;</p>\n" +
-                "<p><br />In a bowl, mix flour butter and parmesan cheese.&nbsp;Now we want to turn that dough into sand, by robbing it between our fingers.&nbsp;</p>\n" +
-                "<p><br />Once the dough looks loke sand, add the egg and mix with the dough. At this step, add a little bit of butter if&nbsp;you think the dough is too sticky.&nbsp;</p>\n" +
-                "<p><br />Form a ball in the bowl, and&nbsp;let it rest in the fridge for an hour.&nbsp;<br />After an hour, heat the oven at 180&deg;C.&nbsp;</p>\n" +
-                "<p><br />Time to wake the dough&nbsp;up...&nbsp;I've got the perfect tool for it, my rolling pin.&nbsp;<br />Flatten the dough, about Three millimetres thick. Use a cookie cutter to shape the&nbsp;sable&nbsp;as you&nbsp;want, and&nbsp;set them on a baking tray.&nbsp;</p>\n" +
-                "<p><br />Bake them for 12&nbsp;minutes.&nbsp;<br />Sables are better cold, so let them cool down...&nbsp;</p>" ,
+            transcription: "<p>Now that we have some dips, we thought it would be nice to serve them with a salty sable. For this sable recipe, we simply trade sugar for parmesan cheese.  </p>\n" +
+                "<p><br />In a bowl, mix flour butter and parmesan cheese. Now we want to turn that dough into sand, by robbing it between our fingers. </p>\n" +
+                "<p><br />Once the dough looks loke sand, add the egg and mix with the dough. At this step, add a little bit of butter if you think the dough is too sticky. </p>\n" +
+                "<p><br />Form a ball in the bowl, and let it rest in the fridge for an hour. <br />After an hour, heat the oven at 180&deg;C. </p>\n" +
+                "<p><br />Time to wake the dough up... I've got the perfect tool for it, my rolling pin. <br />Flatten the dough, about Three millimetres thick. Use a cookie cutter to shape the sable as you want, and set them on a baking tray. </p>\n" +
+                "<p><br />Bake them for 12 minutes. <br />Sables are better cold, so let them cool down... </p>" ,
         },
         {
             rank: 5,
@@ -390,14 +390,14 @@ export const Apero = {
                     text: "Pour in a nice bowl, and enjoy !"
                 }
             ],
-            transcription: "<p>&nbsp;<br />For&nbsp;this&nbsp;one,&nbsp;we&nbsp;will&nbsp;start by&nbsp;creating&nbsp;a cold starter to&nbsp;accompany&nbsp;our&nbsp;meal.&nbsp;What could be better than a fresh side&nbsp;dish?&nbsp;You can eat this side dish with bread, or even, pumpernickel bread.&nbsp;&nbsp;<br />&nbsp;</p>\n" +
-                "<p>For this recipe, you will need some&nbsp;cream cheese, sour cream, one scallion, sesame seeds, poppy seeds, garlic powder, and some black pepper.&nbsp;((show the ingredients))&nbsp;<br />&nbsp;</p>\n" +
-                "<p>First,&nbsp;you&nbsp;need&nbsp;to put&nbsp;into&nbsp;your&nbsp;food&nbsp;processor&nbsp;your&nbsp;cream&nbsp;cheese, and&nbsp;then,&nbsp;add&nbsp;some&nbsp;sour&nbsp;cream.&nbsp;&nbsp;<br />&nbsp;</p>\n" +
-                "<p>Then,&nbsp;mix&nbsp;it&nbsp;until&nbsp;you&nbsp;get&nbsp;a&nbsp;smoothy&nbsp;cream&nbsp;cheese.&nbsp;Now,&nbsp;you&nbsp;can&nbsp;add&nbsp;a&nbsp;scallion, previously cut.&nbsp;&nbsp;<br />&nbsp;</p>\n" +
-                "<p>Then,&nbsp;add&nbsp;some&nbsp;sesame&nbsp;seeds,&nbsp;poppy&nbsp;seeds,&nbsp;garlic&nbsp;powder,&nbsp;and&nbsp;finally,&nbsp;coarsely&nbsp;ground&nbsp;pepper.&nbsp;Mix it.&nbsp;<br />&nbsp;</p>\n" +
-                "<p>Now&nbsp;that&nbsp;you&nbsp;have mixed&nbsp;everything&nbsp;together,&nbsp;you&nbsp;can&nbsp;finally&nbsp;transfer&nbsp;it&nbsp;into&nbsp;a bowl. You can&nbsp;add&nbsp;additional&nbsp;scallions&nbsp;and&nbsp;seeds&nbsp;if&nbsp;you&nbsp;want.&nbsp;&nbsp;<br />&nbsp;</p>\n" +
-                "<p>You can serve it into a&nbsp;bowl, and&nbsp;add some bread&nbsp;next to it.&nbsp;choose what you like best.&nbsp;&nbsp;<br />&nbsp;</p>\n" +
-                "<p>If you want a non-vegan meal, you can add salmon.&nbsp;Here is my&nbsp;tip:&nbsp;better if you take it out of the refrigerator half an hour before eating&nbsp;it:&nbsp;it will be&nbsp;refreshing.&nbsp;&nbsp;</p>" ,
+            transcription: "<p> <br />For this one, we will start by creating a cold starter to accompany our meal. What could be better than a fresh side dish? You can eat this side dish with bread, or even, pumpernickel bread. <br /> </p>\n" +
+                "<p>For this recipe, you will need some cream cheese, sour cream, one scallion, sesame seeds, poppy seeds, garlic powder, and some black pepper. ((show the ingredients)) <br /> </p>\n" +
+                "<p>First, you need to put into your food processor your cream cheese, and then, add some sour cream. <br /> </p>\n" +
+                "<p>Then, mix it until you get a smoothy cream cheese. Now, you can add a scallion, previously cut. <br /> </p>\n" +
+                "<p>Then, add some sesame seeds, poppy seeds, garlic powder, and finally, coarsely ground pepper. Mix it. <br /> </p>\n" +
+                "<p>Now that you have mixed everything together, you can finally transfer it into a bowl. You can add additional scallions and seeds if you want. <br /> </p>\n" +
+                "<p>You can serve it into a bowl, and add some bread next to it. choose what you like best. <br /> </p>\n" +
+                "<p>If you want a non-vegetarian meal, you can add salmon. Here is my tip: better if you take it out of the refrigerator half an hour before eating it: it will be refreshing. </p>" ,
         },
         {
             rank: 6,
@@ -532,44 +532,62 @@ export const Apero = {
                 }
             ],
             transcription: "<p>What would an aperitif be without a refreshing cocktail ?</p>\n" +
-                "<p>Let me&nbsp;present&nbsp;you&nbsp;the Tiki.&nbsp;The&nbsp;history&nbsp;of&nbsp;this&nbsp;drink can&nbsp;be&nbsp;traced&nbsp;back in the 30&rsquo;s, in Hollywood.&nbsp;It&rsquo;s&nbsp;inspired&nbsp;by the&nbsp;Polynesian&nbsp;culture. Even&nbsp;thought&nbsp;it&rsquo;s&nbsp;recipes&nbsp;(&nbsp;there&nbsp;are&nbsp;many&nbsp;) have&nbsp;changed&nbsp;a lot&nbsp;since&nbsp;it&rsquo;s&nbsp;creation,&nbsp;it&rsquo;s&nbsp;still&nbsp;a&nbsp;nice&nbsp;mixe of&nbsp;exotic&nbsp;fruits,&nbsp;spices,&nbsp;and&nbsp;amber&nbsp;rhum.&nbsp;</p>\n" +
-                "<p>We&nbsp;will&nbsp;present&nbsp;you&nbsp;a simple version, but&nbsp;feel&nbsp;free to&nbsp;personalize&nbsp;it&nbsp;as&nbsp;you&nbsp;wish.&nbsp;<br />&nbsp;</p>\n" +
-                "<p>Let&rsquo;s&nbsp;start&nbsp;with&nbsp;the fruits.&nbsp;&nbsp;<br />You can, of course,&nbsp;buy&nbsp;juices, but,&nbsp;believe&nbsp;me,&nbsp;it&nbsp;will&nbsp;test&nbsp;way&nbsp;better&nbsp;with&nbsp;fresh&nbsp;fruits.&nbsp;&nbsp;<br />For&nbsp;this&nbsp;recipe,&nbsp;we&nbsp;will&nbsp;need&nbsp;a&nbsp;pineapple, to passion fruits,&nbsp;some&nbsp;orgeat&nbsp;syrup, a&nbsp;pinch&nbsp;of&nbsp;ginger,&nbsp;amber&nbsp;rhum of&nbsp;your&nbsp;choice, and, of course,&nbsp;ice&nbsp;cubes.&nbsp;&nbsp;<br />Let&rsquo;s&nbsp;start&nbsp;with&nbsp;the&nbsp;pineapple. First of all,&nbsp;we&nbsp;need&nbsp;to&nbsp;peel&nbsp;it.&nbsp;&nbsp;<br />&nbsp;</p>\n" +
-                "<p>Then,&nbsp;cut&nbsp;it&nbsp;into&nbsp;cubes,&nbsp;keep&nbsp;some&nbsp;for&nbsp;decoration.&nbsp;&nbsp;<br />&nbsp;<br />After&nbsp;that, put&nbsp;it&nbsp;all in the blender,&nbsp;<br />Then,&nbsp;take&nbsp;the passion fruits, and&nbsp;cut&nbsp;them&nbsp;in&nbsp;half.&nbsp;&nbsp;<br />With&nbsp;a&nbsp;spoon,&nbsp;extract&nbsp;the fruit,&nbsp;add&nbsp;it&nbsp;into&nbsp;the blender.&nbsp;<br />&nbsp;</p>\n" +
-                "<p>Cut a&nbsp;small&nbsp;slice of&nbsp;ginger, not to&nbsp;much, but&nbsp;we&nbsp;still&nbsp;want&nbsp;to taste&nbsp;it, and,&nbsp;again,&nbsp;add&nbsp;it&nbsp;to the&nbsp;other&nbsp;fruits.&nbsp;&nbsp;<br />&nbsp;</p>\n" +
-                "<p>Then&nbsp;blend&nbsp;it&nbsp;all&nbsp;until&nbsp;you&nbsp;get&nbsp;a&nbsp;smooth&nbsp;liquid.&nbsp;&nbsp;<br />&nbsp;<br />There&nbsp;is&nbsp;some&nbsp;crumbs&nbsp;so&nbsp;pass&nbsp;it&nbsp;through&nbsp;a&nbsp;sieve.&nbsp;<br />&nbsp;Take&nbsp;your&nbsp;favorite cocktail glass,&nbsp;fill&nbsp;it&nbsp;with&nbsp;ice&nbsp;cubes.&nbsp;Add&nbsp;2 or 3&nbsp;tablespoon&nbsp;( about&nbsp;4cl )&nbsp;of rhum.&nbsp;&nbsp;<br />&nbsp;</p>\n" +
-                "<p>Then, pour&nbsp;your&nbsp;freshly&nbsp;homemade&nbsp;juice&nbsp;into&nbsp;a glass.&nbsp;Add&nbsp;some&nbsp;decoration, like&nbsp;pineapple&nbsp;pices, or&nbsp;pineapple&nbsp;leaf.&nbsp;&nbsp;<br />&nbsp;</p>\n" +
-                "<p>Enjoy&nbsp;with&nbsp;moderation&nbsp;!&nbsp;</p>" ,
+                "<p>Let me present you the Tiki. The history of this drink can be traced back in the 30&rsquo;s, in Hollywood. It&rsquo;s inspired by the Polynesian culture. Even thought it&rsquo;s recipes ( there are many ) have changed a lot since it&rsquo;s creation, it&rsquo;s still a nice mixe of exotic fruits, spices, and amber rhum. </p>\n" +
+                "<p>We will present you a simple version, but feel free to personalize it as you wish. <br /> </p>\n" +
+                "<p>Let&rsquo;s start with the fruits. <br />You can, of course, buy juices, but, believe me, it will test way better with fresh fruits. <br />For this recipe, we will need a pineapple, to passion fruits, some orgeat syrup, a pinch of ginger, amber rhum of your choice, and, of course, ice cubes. <br />Let&rsquo;s start with the pineapple. First of all, we need to peel it. <br /> </p>\n" +
+                "<p>Then, cut it into cubes, keep some for decoration. <br /> <br />After that, put it all in the blender, <br />Then, take the passion fruits, and cut them in half. <br />With a spoon, extract the fruit, add it into the blender. <br /> </p>\n" +
+                "<p>Cut a small slice of ginger, not to much, but we still want to taste it, and, again, add it to the other fruits. <br /> </p>\n" +
+                "<p>Then blend it all until you get a smooth liquid. <br /> <br />There is some crumbs so pass it through a sieve. <br /> Take your favorite cocktail glass, fill it with ice cubes. Add 2 or 3 tablespoon ( about 4cl ) of rhum. <br /> </p>\n" +
+                "<p>Then, pour your freshly homemade juice into a glass. Add some decoration, like pineapple pices, or pineapple leaf. <br /> </p>\n" +
+                "<p>Enjoy with moderation ! </p>" ,
         },
 
     ],
     quiz: [
         {
-            question: "Is this true ?",
+            question: "How to cook vegetables faster ?",
             answers: [
-                { text: "Yes !", isCorrect: true},
-                { text: "Nope !", isCorrect: false},
-                { text: "Maybe !", isCorrect: false},
-                { text: "I dunno !", isCorrect: false},
+                { text: "By gently asking them", isCorrect: false},
+                { text: "By cutting them before cooking", isCorrect: true},
+                { text: "By adding some oil on them", isCorrect: false},
+                { text: "By adding water on them", isCorrect: false},
             ]
         },
 
         {
-            question: "Is this true ?",
+            question: "Why shouldn't you peal your beetroots before cooking them ?",
             answers: [
-                { text: "Yes !", isCorrect: true},
-                { text: "Nope !", isCorrect: false},
-                { text: "Maybe !", isCorrect: false},
-                { text: "I dunno !", isCorrect: false},
+                { text: "Because it will loose it's colour", isCorrect: true},
+                { text: "Because there is no peal on beetroot", isCorrect: false},
+                { text: "Because it will turn to mash", isCorrect: false},
+                { text: "Because it will hurt them", isCorrect: false},
             ]
         },
         {
-            question: "Is this true ?",
+            question: "Which of the ingredients are used to make Sablée pastry ?",
             answers: [
-                { text: "Yes !", isCorrect: true},
-                { text: "Nope !", isCorrect: false},
-                { text: "Maybe !", isCorrect: false},
-                { text: "I dunno !", isCorrect: false},
+                { text: "Flour", isCorrect: true},
+                { text: "Milk", isCorrect: false},
+                { text: "Eggs", isCorrect: true},
+                { text: "Butter", isCorrect: true},
+            ]
+        },
+        {
+            question: "When should you had the eggs in your Gougère dough ?",
+            answers: [
+                { text: "Alongside with the milk and butter, before cooking", isCorrect: true},
+                { text: "Just after cooking, while the dough is still hot", isCorrect: false},
+                { text: "Just after it has been dried with the flour, when the dough has cooled down", isCorrect: true},
+                { text: "What flour ? There is no flour in this recipe.", isCorrect: true},
+            ]
+        },
+        {
+            question: "You should let your blini's baker :",
+            answers: [
+                { text: "Cool down for about 1 hour in the fridge", isCorrect: false},
+                { text: "", isCorrect: false},
+                { text: "Just after it has been dried with the flour, when the dough has cooled down", isCorrect: true},
+                { text: "What flour ? There is no flour in this recipe.", isCorrect: true},
             ]
         }
     ],

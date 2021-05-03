@@ -49,15 +49,15 @@
 
       </div>
       <div class="buttons">
-        <router-link class="btn-link" :to="{name: 'week', params: {id: week.number}}">
+        <router-link  @click="scrollTop()" class="btn-link" :to="{name: 'week', params: {id: week.number}}">
           <v-icon class="icon" large>mdi-chevron-left</v-icon>
           <span>Return to Summary</span>
         </router-link>
-        <router-link v-if="isThisTheEnd()" class="btn-link" :to="{name: 'end', params: {week: week.number}}">
+        <router-link  @click="scrollTop()" v-if="isThisTheEnd()" class="btn-link" :to="{name: 'end', params: {week: week.number}}">
           <span>Finish Lesson</span>
           <v-icon class="icon" large>mdi-chevron-right</v-icon>
         </router-link>
-        <router-link v-else class="btn-link" :to="{name: 'recipe', params: {week: week.number, recipe: week.recipes.indexOf(recipe) + 1}}">
+        <router-link @click="scrollTop()" v-else class="btn-link" :to="{name: 'recipe', params: {week: week.number, recipe: week.recipes.indexOf(recipe) + 1}}">
           <span>Next Lesson</span>
           <v-icon class="icon" large>mdi-chevron-right</v-icon>
         </router-link>
@@ -95,6 +95,9 @@ export default {
           result = Math.round((ingredient.quantity / this.recipe.persons) * this.nbPersons)
           return  (result <= 0) ? 1 : result;
       }
+    },
+    scrollTop() {
+      window.scrollTo(0,0);
     },
     changeNbPersons(changer) {
       this.nbPersons += changer;
