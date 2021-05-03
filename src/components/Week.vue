@@ -6,7 +6,7 @@
       </div>
       <header class="centered-flex">
         <div class="text">
-          <h2>First Week : {{week.name}}</h2>
+          <h2>Week {{week.number}}: {{week.name}}</h2>
           <p>{{week.description}}</p>
           <h3>{{week.recipes.length > 1 ? 'Recipes' : 'Recipe'}} you'll learn :</h3>
           <nav>

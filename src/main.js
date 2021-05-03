@@ -10,6 +10,7 @@ import MoocService from "@/assets/data/MoocService.js";
 import EndLesson from "@/components/EndLesson.vue";
 
 
+
 Vue.config.productionTip = false
 Vue.use(VueRouter);
 Vue.use(Embed);

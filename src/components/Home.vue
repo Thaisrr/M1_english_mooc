@@ -13,10 +13,10 @@
         <div class="text centered-flex">
           <article>
             <h2>What will you learn ?</h2>
-            <p>Cake sugar plum fruitcake candy canes chocolate jelly beans candy biscuit lollipop. Icing jelly gummi bears pudding. Candy apple pie sweet roll. Muffin caramels I love.</p>
-            <p>Icing chocolate cake chocolate topping jelly-o caramels wafer caramels brownie.
-              Brownie tootsie roll I love jujubes I love I love sesame snaps. Bear claw cupcake tootsie roll tiramisu I love chocolate bar.
-              Cheesecake caramels ice cream liquorice sweet cotton candy dessert brownie.</p>
+            <p>During this MOOC, you will learn how to make a complete festive vegetarian menu step by step.
+              You will learn many different cooking techniques and at the end you will be able to cook a complete full course for your friends or your family like we do in France. </p>
+            <p>The MOOC is divided into 4 weeks based on each part of the menu. The first week is dedicated to the appetizers and the dips.
+              The second week is about the starter. The third week is about the main dish and the last week is dedicated to the dessert. </p>
           </article>
         </div>
       </section>
@@ -26,21 +26,15 @@
         <div class="text centered-flex">
           <article>
             <h2 class="section-title">About Us</h2>
-            <h3>Who are we ?</h3>
-            <p>Cake sugar plum fruitcake candy canes chocolate jelly beans candy biscuit lollipop. Icing jelly gummi bears pudding. Candy apple pie sweet roll. Muffin caramels I love.</p>
-            <p>Icing chocolate cake chocolate topping jelly-o caramels wafer caramels brownie.
-              Brownie tootsie roll I love jujubes I love I love sesame snaps. Bear claw cupcake tootsie roll tiramisu I love chocolate bar.
-              Cheesecake caramels ice cream liquorice sweet cotton candy dessert brownie.</p>
+            <h3>The fellowship of the food</h3>
+            <p>We are four IT students of the <i>Université Catholique</i> of Lille.</p>
+            <p>Pierre and Morgan are the two cooks of our group, while Chiara is our dedicated boom operator and one of the camerawomen,
+              alongside with Thaïs, who is also the poorly skilled photographer.</p>
 
-            <h3>What will you learn ?</h3>
-            <p>Cake sugar plum fruitcake candy canes chocolate jelly beans candy biscuit lollipop. Icing jelly gummi bears pudding. Candy apple pie sweet roll. Muffin caramels I love.</p>
-            <p>Icing chocolate cake chocolate topping jelly-o caramels wafer caramels brownie.
-              Brownie tootsie roll I love jujubes I love I love sesame snaps. Bear claw cupcake tootsie roll tiramisu I love chocolate bar.
-              Cheesecake caramels ice cream liquorice sweet cotton candy dessert brownie.</p>
           </article>
         </div>
         <div class="media-container">
-          <img src="https://img.nrj.fr/lqkKYS15Yp4Pr-JjScf1VTAHrFI=/http://media.nrj.fr/436x327/2012/12/villagepeoplewmcy_637653.jpg" alt="Notre photo">
+          <img src="https://mvistatic.com/photosmvi/2020/06/09/P23028309D4128945G.jpg" alt="Notre photo">
         </div>
       </section>
     </main>

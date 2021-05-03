@@ -329,7 +329,7 @@ export const Apero = {
             image: require('../images/cream.png'),
             intro: "",
             persons: 4,
-            video: "https://www.youtube.com/embed/RFfudedp6Po?list=RDMM_wxoPZijXU0",
+            video: "https://www.youtube.com/embed/1WJ0n60WB78",
             ingredients: [
                 {
                     quantity: 225,
@@ -401,11 +401,11 @@ export const Apero = {
         },
         {
             rank: 6,
-            name: "Blinis",
+            name: "Russian Blinis",
             image: require('../images/pancake.png'),
             intro: "To go with the spreads, we will make traditional Russian blinis with buckwheat flour. ",
             persons: 4,
-            video: "https://www.youtube.com/embed/RFfudedp6Po?list=RDMM_wxoPZijXU0",
+            video: "https://www.youtube.com/embed/dovW4dy-uuo",
             ingredients: [
                 {
                     quantity: 50,
@@ -481,7 +481,7 @@ export const Apero = {
         },
         {
             rank: 7,
-            name: "Tikki Cocktail",
+            name: "Tiki Cocktail",
             image: require('../images/cocktail.png'),
             intro: "What would an aperitif be without a refreshing cocktail ? ",
             persons: 1,
