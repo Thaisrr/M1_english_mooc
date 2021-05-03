@@ -8,7 +8,7 @@
       </section>
       <section class="mooc">
         <div class="media-container centered-flex">
-          <iframe class="video" src="https://www.youtube.com/embed/RSx1xWn0RJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="video" src="https://www.youtube.com/embed/SIpfve9nu98" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="text centered-flex">
           <article>
