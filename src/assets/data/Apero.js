@@ -157,6 +157,82 @@ export const Apero = {
         },
         {
             rank: 3,
+            name: "Fresh creamy dip",
+            image: require('../images/cream.png'),
+            intro: "",
+            persons: 4,
+            video: "https://www.youtube.com/embed/1WJ0n60WB78",
+            ingredients: [
+                {
+                    quantity: 225,
+                    unity: "g",
+                    name: "cream cheese"
+                },
+                {
+                    quantity: 1/4,
+                    unity: "cup",
+                    name: "sour cream"
+                },
+                {
+                    quantity: 1,
+                    unity: "",
+                    name: "scallion"
+                },
+                {
+                    quantity: 1,
+                    unity: "teaspoon",
+                    name: "black sesame seeds"
+                },
+                {
+                    quantity: 1,
+                    unity: "teaspoon",
+                    name: "white sesame seeds"
+                },
+                {
+                    quantity: 1/2,
+                    unity: "teaspoon",
+                    name: "poppy seeds"
+                },
+                {
+                    quantity: 1/8,
+                    unity: "teaspoon",
+                    name: "garlic powder"
+                },
+                {
+                    quantity: 1/8,
+                    unity: "teaspoon",
+                    name: "coarsely ground black pepper"
+                }
+            ],
+            steps: [
+                {
+                    number: 1,
+                    text: "First, you need to put into your food processor your cream cheese, and then, add some sour cream."
+                },
+                {
+                    number: 2,
+                    text: "Mix it until you get a smoothy cream cheese. Now, you can add a scallion, previously cut.  "
+                },
+                {
+                    number: 3,
+                    text: "Add some sesame seeds, poppy seeds, garlic powder, and finally, coarsely ground pepper. Mix it. "
+                },
+                {
+                    number: 4,
+                    text: "Pour in a nice bowl, and enjoy !"
+                }
+            ],
+            transcription: "<p> <br />For this one, we will start by creating a cold starter to accompany our meal. What could be better than a fresh side dish? You can eat this side dish with bread, or even, pumpernickel bread. <br /> </p>\n" +
+                "<p>For this recipe, you will need some cream cheese, sour cream, one scallion, sesame seeds, poppy seeds, garlic powder, and some black pepper. ((show the ingredients)) <br /> </p>\n" +
+                "<p>First, you need to put into your food processor your cream cheese, and then, add some sour cream. <br /> </p>\n" +
+                "<p>Then, mix it until you get a smoothy cream cheese. Now, you can add a scallion, previously cut. <br /> </p>\n" +
+                "<p>Then, add some sesame seeds, poppy seeds, garlic powder, and finally, coarsely ground pepper. Mix it. <br /> </p>\n" +
+                "<p>Now that you have mixed everything together, you can finally transfer it into a bowl. You can add additional scallions and seeds if you want. <br /> </p>\n" +
+                "<p>You can serve it into a bowl, and add some bread next to it. choose what you like best. <br /> </p>\n" +
+                "<p>If you want a non-vegetarian meal, you can add salmon. Here is my tip: better if you take it out of the refrigerator half an hour before eating it: it will be refreshing. </p>" ,
+        },
+        {
+            rank: 4,
             name: "Cheesy Gougère",
             image: require('../images/gougères.png'),
             intro: "Today we want to go fancy receiving our friends, so let’s bake some gougeres.",
@@ -249,7 +325,7 @@ export const Apero = {
                 "<p><br />Finally sprinkle the remaining cheese on top of the gougere and put the trays in the oven for 22 minutes. <br />Last advice &hellip; serve hot. </p>\n"
         },
         {
-            rank: 4,
+            rank: 5,
             name: "Parmigiano cheese sablés",
             image: require('../images/sables.png'),
             intro: "Now that we have some dips, we thought it would be nice to serve them with a salty sable.",
@@ -322,82 +398,6 @@ export const Apero = {
                 "<p><br />Form a ball in the bowl, and let it rest in the fridge for an hour. <br />After an hour, heat the oven at 180&deg;C. </p>\n" +
                 "<p><br />Time to wake the dough up... I've got the perfect tool for it, my rolling pin. <br />Flatten the dough, about Three millimetres thick. Use a cookie cutter to shape the sable as you want, and set them on a baking tray. </p>\n" +
                 "<p><br />Bake them for 12 minutes. <br />Sables are better cold, so let them cool down... </p>" ,
-        },
-        {
-            rank: 5,
-            name: "Fresh creamy dip",
-            image: require('../images/cream.png'),
-            intro: "",
-            persons: 4,
-            video: "https://www.youtube.com/embed/1WJ0n60WB78",
-            ingredients: [
-                {
-                    quantity: 225,
-                    unity: "g",
-                    name: "cream cheese"
-                },
-                {
-                    quantity: 1/4,
-                    unity: "cup",
-                    name: "sour cream"
-                },
-                {
-                    quantity: 1,
-                    unity: "",
-                    name: "scallion"
-                },
-                {
-                    quantity: 1,
-                    unity: "teaspoon",
-                    name: "black sesame seeds"
-                },
-                {
-                    quantity: 1,
-                    unity: "teaspoon",
-                    name: "white sesame seeds"
-                },
-                {
-                    quantity: 1/2,
-                    unity: "teaspoon",
-                    name: "poppy seeds"
-                },
-                {
-                    quantity: 1/8,
-                    unity: "teaspoon",
-                    name: "garlic powder"
-                },
-                {
-                    quantity: 1/8,
-                    unity: "teaspoon",
-                    name: "coarsely ground black pepper"
-                }
-            ],
-            steps: [
-                {
-                    number: 1,
-                    text: "First, you need to put into your food processor your cream cheese, and then, add some sour cream."
-                },
-                {
-                    number: 2,
-                    text: "Mix it until you get a smoothy cream cheese. Now, you can add a scallion, previously cut.  "
-                },
-                {
-                    number: 3,
-                    text: "Add some sesame seeds, poppy seeds, garlic powder, and finally, coarsely ground pepper. Mix it. "
-                },
-                {
-                    number: 4,
-                    text: "Pour in a nice bowl, and enjoy !"
-                }
-            ],
-            transcription: "<p> <br />For this one, we will start by creating a cold starter to accompany our meal. What could be better than a fresh side dish? You can eat this side dish with bread, or even, pumpernickel bread. <br /> </p>\n" +
-                "<p>For this recipe, you will need some cream cheese, sour cream, one scallion, sesame seeds, poppy seeds, garlic powder, and some black pepper. ((show the ingredients)) <br /> </p>\n" +
-                "<p>First, you need to put into your food processor your cream cheese, and then, add some sour cream. <br /> </p>\n" +
-                "<p>Then, mix it until you get a smoothy cream cheese. Now, you can add a scallion, previously cut. <br /> </p>\n" +
-                "<p>Then, add some sesame seeds, poppy seeds, garlic powder, and finally, coarsely ground pepper. Mix it. <br /> </p>\n" +
-                "<p>Now that you have mixed everything together, you can finally transfer it into a bowl. You can add additional scallions and seeds if you want. <br /> </p>\n" +
-                "<p>You can serve it into a bowl, and add some bread next to it. choose what you like best. <br /> </p>\n" +
-                "<p>If you want a non-vegetarian meal, you can add salmon. Here is my tip: better if you take it out of the refrigerator half an hour before eating it: it will be refreshing. </p>" ,
         },
         {
             rank: 6,
@@ -585,10 +585,11 @@ export const Apero = {
             question: "You should let your blini's baker :",
             answers: [
                 { text: "Cool down for about 1 hour in the fridge", isCorrect: false},
-                { text: "", isCorrect: false},
+                { text: "Just after cooking, while the dough is still hot", isCorrect: false},
                 { text: "Just after it has been dried with the flour, when the dough has cooled down", isCorrect: true},
                 { text: "What flour ? There is no flour in this recipe.", isCorrect: true},
             ]
-        }
+        },
+
     ],
 }

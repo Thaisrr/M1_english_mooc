@@ -36,12 +36,17 @@
                   <button class="bold" v-on:click="changeNbPersons(+1)">+</button>
                 </p>
                 <ul>
-                  <li v-for="(ing, index) of recipe.ingredients" :key="index"><span class="bold">{{getQuantity(ing)}}{{ing.unity}}</span> {{ing.name}}</li>
+                  <li v-for="(ing, index) of recipe.ingredients" :key="index">
+                    <span v-if="ing.quantity"><span class="bold">{{getQuantity(ing)}}{{ing.unity}}</span> {{ing.name}}</span>
+                    <span v-else class="part">{{ing.part}}</span>
+                  </li>
                 </ul>
                 <h3>Recipe</h3>
                 <ul>
                   <li v-for="(step, index) of recipe.steps" :key="index">
-                    <span class="bold">{{step.number}}. </span> {{step.text}}</li>
+                    <span v-if="step.number"><span class="bold">{{step.number}}. </span> {{step.text}}</span>
+                    <span v-else class="part">{{step.part}}</span>
+                  </li>
                 </ul>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -177,7 +182,15 @@ h3 {
 .content {
   color: var(--dark) !important;
   padding: 0 30px 50px;
+}
 
+li:has(.part) {
+  list-style: none;
+}
+
+.part {
+  font-size: 1.1em;
+  list-style: none;
 }
 
 .header {
