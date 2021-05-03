@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="week">
     <div id="image" :style="`background-image: url(${week.image})`"></div>
     <div id="text">
       <div class="frame">
@@ -68,16 +68,18 @@ import QuizService from "@/services/QuizService.js";
 import MoocService from "@/assets/data/MoocService.js";
 
 export default {
+
   name: "EndLesson",
   data() {
     return {
       selected: [],
       isFinish: false,
-      score: ""
+      score: "",
+      week: undefined
     }
   },
-  props: {
-    week: Object
+  mounted() {
+    this.week = MoocService.getWeekById(this.$route.params.week)
   },
   methods: {
     number_week() {
