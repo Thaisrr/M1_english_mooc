@@ -1,9 +1,7 @@
 <template>
   <div id="router">
     <div id="absolute">
-      <div id="corner">
-        <img :src="week.image">
-      </div>
+      <div id="corner" :style="`background-image: url(${week.image})`">
       <header class="centered-flex">
         <div class="text">
           <h2>Week {{week.number}}: {{week.name}}</h2>
@@ -24,6 +22,7 @@
           </nav>
         </div>
       </header>
+      </div>
     </div>
   </div>
 </template>
@@ -67,8 +66,13 @@ export default {
 
 #corner {
   width: 100%;
-  height: 70vh;
+  min-height: 70vh;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
 }
 #corner img {
   width: 100%;
@@ -77,11 +81,9 @@ export default {
 header {
   width: 40%;
   padding: 30px;
-  position: absolute;
-  top: 8vw;
-  left: 15vw;
+
   background: #D4AF37;
-  z-index: 1;
+
 }
 
 header .text {

@@ -27,7 +27,7 @@ export default {
   background: var(--dark);
   width: 22%;
   border-radius: 5px;
-  height: 250px;
+  min-height: 250px;
 }
 
 
