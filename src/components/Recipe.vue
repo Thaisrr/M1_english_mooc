@@ -94,16 +94,9 @@ export default {
   methods: {
     getQuantity(ingredient) {
       let result;
-      switch (ingredient.unity) {
-        case 'ml' || 'l' || 'cl' || 'g' || 'kg' || 'cup' :
-          console.log('decimal')
-          result = Math.round(((ingredient.quantity / this.recipe.persons) * this.nbPersons) * 100) / 100 ;
-          return (result <= 0) ? 0.1 : result;
-        default:
-          console.log('default')
-          result = Math.round((ingredient.quantity / this.recipe.persons) * this.nbPersons)
-          return  (result <= 0) ? 1 : result;
-      }
+      console.log('decimal')
+      result = Math.round(((ingredient.quantity / this.recipe.persons) * this.nbPersons) * 100) / 100 ;
+      return (result <= 0) ? 0.1 : result;
     },
     scrollTop() {
       window.scrollTo(0,0);
@@ -117,7 +110,7 @@ export default {
       console.log('index : ', recipe_index)
       return !this.week.recipes[recipe_index + 1];
     }
-  },
+  }
 }
 </script>
 
