@@ -5,7 +5,9 @@
       <p>{{week.description}}</p>
     </div>
     <div class="card-footer">
-      <router-link class="link" :to="{name: 'week', params: {id: week.number}}"  type="button">Start the Course</router-link>
+      <router-link class="link" :to="{name: 'week', params: {id: week.number}}"  type="button">
+        Start the Course
+      </router-link>
     </div>
   </div>
 

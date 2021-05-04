@@ -17,6 +17,12 @@
               You will learn many different cooking techniques and at the end you will be able to cook a complete full course for your friends or your family like we do in France. </p>
             <p>The MOOC is divided into 4 weeks based on each part of the menu. The first week is dedicated to the appetizers and the dips.
               The second week is about the starter. The third week is about the main dish and the last week is dedicated to the dessert. </p>
+            <p>
+              <router-link class="link" :to="{name: 'week', params: {id: 1}}"  type="button">
+                <span class="span">Start the Course</span>
+                <v-icon class="icon" large>mdi-chevron-right</v-icon>
+              </router-link>
+            </p>
           </article>
         </div>
       </section>
@@ -128,6 +134,27 @@ export default {
 
 #about-us article {
   border-color: #D4AF37;
+}
+
+.link {
+  padding-top: 20px;
+  color: var(--dark);
+  text-decoration: none !important;
+}
+
+.link .icon {
+  color: #28536B;
+}
+
+.link:link span{
+  color: var(--dark);
+  font-size: 1.1em;
+  text-decoration: underline;
+}
+
+.link:hover .span {
+  font-weight: bold;
+  cursor: pointer;
 }
 
 

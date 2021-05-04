@@ -156,5 +156,44 @@ export const Starter = {
                 "<p>Missing part of the video: cook the raviolis for 3 minutes into the broth.\n</p>" +
                 "<p>So now that our raviolis are cooked, we will make the dressage. Because it is a starter, we don’t want too many raviolis. Only three per person should be enough. So put three raviolis int the plate. Pour some broth into it. Add some chopped scallions and a little bit of burrata in the center. And voila!\n</p>",
         },
-    ]
+    ],
+    quiz: [
+        {
+            question: "When do you need the truffle paste?",
+            answers: [
+                { text: "For the dough", isCorrect: false},
+                { text: "For the broth", isCorrect: true},
+                { text: "For the stuffing", isCorrect: false},
+                { text: "For the dressage", isCorrect: false},
+            ]
+        },
+
+        {
+            question: "For how long the dough need to rest?",
+            answers: [
+                { text: "30 minutes", isCorrect: false},
+                { text: "45 minutes", isCorrect: false},
+                { text: "60 minutes", isCorrect: true},
+                { text: "90 minutes", isCorrect: false},
+            ]
+        },
+        {
+            question: "By which tool can you replace a pasta sheeter?",
+            answers: [
+                { text: "your hands", isCorrect: false},
+                { text: "a fork", isCorrect: false},
+                { text: "a pan", isCorrect: false},
+                { text: "a pastry pin", isCorrect: true},
+            ]
+        },
+        {
+            question: "Which part of the burrata do we use for the stuffing?",
+            answers: [
+                { text: "The skin", isCorrect: false},
+                { text: "the cream", isCorrect: true},
+                { text: "the juice", isCorrect: false},
+                { text: "we don't need burrata", isCorrect: false},
+            ]
+        }
+    ],
 }
