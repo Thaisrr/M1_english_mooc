@@ -29,7 +29,7 @@ export default {
   },
   methods: {
     number_week(week) {
-      if(week.number === 1) return '1rst'
+      if(week.number === 1) return '1st'
       else if (week.number === 2) return '2nd'
       else if (week.number === 3) return '3rd'
       else return `${week.number}th`
