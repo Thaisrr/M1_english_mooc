@@ -10,7 +10,6 @@ import MoocService from "@/assets/data/MoocService.js";
 import EndLesson from "@/components/EndLesson.vue";
 
 
-
 Vue.config.productionTip = false
 Vue.use(VueRouter);
 Vue.use(Embed);
@@ -21,21 +20,24 @@ const routes = [
     path: '/end-week/:week',
     name: 'end',
     component: EndLesson,
-    props: route => ({week: MoocService.getWeekById(route.params.week) })
+    props: route => ({week: MoocService.getWeekById(+route.params.week) })
   },
   {
     path: '/week/:id',
     name: 'week',
     component: Week,
-    props: route => ({week: MoocService.getWeekById(route.params.id) })
+    props: route => {
+      const week = {week: MoocService.getWeekById(+route.params.id)};
+      return week
+    }
   },
   {
     path: '/recipe/:week/:recipe',
     name: 'recipe',
     component: Recipe,
     props: route => ({
-      recipe: MoocService.getRecipeByWeekAndIndex(route.params.week, route.params.recipe),
-      week : MoocService.getWeekById(route.params.week)
+      recipe: MoocService.getRecipeByWeekAndIndex(+route.params.week, +route.params.recipe),
+      week : MoocService.getWeekById(+route.params.week)
     })
   },
   {path: '*', redirect: 'home'}
